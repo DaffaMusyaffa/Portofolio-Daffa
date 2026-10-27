@@ -1,0 +1,323 @@
+import { Project, ProjectBase } from '@/types/project';
+
+export const navItems = [
+  { name: 'About', link: '#about' },
+  { name: 'All Projects', link: '/projects' },
+  { name: 'Contact', link: '#contact' },
+];
+
+export const gridItems = [
+  {
+    id: 1,
+    title: 'I prioritize client collaboration, fostering open communication ',
+    description: '',
+    className: 'lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]',
+    imgClassName: 'w-full h-full',
+    titleClassName: 'justify-end',
+    img: '/b1.svg',
+    spareImg: '',
+  },
+  {
+    id: 2,
+    title: "I'm very flexible with time zone communications",
+    description: '',
+    className: 'lg:col-span-2 md:col-span-3 md:row-span-2',
+    imgClassName: '',
+    titleClassName: 'justify-start',
+    img: '',
+    spareImg: '',
+  },
+
+  {
+    id: 6,
+    title: 'Do you want to start a project together?',
+    description: '',
+    // Pindah ke posisi atas kanan (menggantikan posisi tech stack yang lama)
+    className: 'lg:col-span-2 md:col-span-3 md:row-span-2',
+    imgClassName: '',
+    titleClassName: 'justify-center md:max-w-full max-w-60 text-center',
+    img: '',
+    spareImg: '',
+  },
+];
+
+// Data projects dengan tipe Project lengkap
+export const projects: Project[] = [
+  {
+    // ProjectBase properties
+    id: 1,
+    title: 'POS - Sales Transaction System',
+    des: 'Point of Sale web application for recording sales transactions, built with Laravel and MySQL, featuring fast cashier checkout, product management, and sales reports.',
+    img: '/projects/pos-app.png',
+    iconLists: ['/laravel.svg', '/mysql.svg', '/tail.svg', '/alpinejs.svg'],
+    link: 'https://duapersen.krevostudio.com/login',
+
+    // Extended Project properties
+    slug: 'pos-sales-system',
+    pinTitle: 'Point of Sale System',
+    category: 'Point of Sale',
+    status: 'Live',
+    startDate: '2025',
+    role: 'Full Stack Developer',
+    teamSize: '1 Developer',
+    gallery: ['/projects/pos-app.png', '/projects/pos-app.png', '/projects/pos-app.png'],
+    features: [
+      'Fast cashier checkout (transaction recording)',
+      'Product and stock management',
+      'Automatic stock deduction per sale',
+      'Transaction history with date filters',
+      'Daily and monthly sales reports',
+      'Receipt printing support',
+    ],
+    challenges: [
+      'Designing normalized transaction database schema',
+      'Ensuring stock consistency during concurrent sales',
+      'Building fast and simple cashier workflow UX',
+    ],
+    technologies: [
+      { name: 'Laravel', description: 'Backend framework for business logic and authentication' },
+      { name: 'MySQL', description: 'Relational database for products, transactions, and reports' },
+      { name: 'Tailwind CSS', description: 'Styling framework' },
+      { name: 'Alpine.js', description: 'Lightweight interactivity for cashier UI' },
+    ],
+    detailedDescription:
+      'A Point of Sale (POS) web application for recording sales transactions in a retail environment. Built with Laravel and MySQL, it handles fast cashier checkout, automatic stock updates, transaction history, and sales reporting. Designed with a simple workflow so cashiers can record transactions quickly with minimal clicks.',
+    githubUrl: '',
+    liveUrl: 'https://duapersen.krevostudio.com/login',
+  },
+  {
+    id: 2,
+    title: 'Dekompres - AI Journaling App',
+    des: 'Structured journaling web app for students: write 2-3 sentences a day, an LLM parses each entry into structured data, and a dashboard reveals stress patterns.',
+    img: '/projects/dekompres.png',
+    iconLists: ['/next.svg', '/ts.svg', '/tail.svg', '/re.svg', '/supabase.svg'],
+    link: 'https://dekompres.vercel.app/',
+
+    slug: 'dekompres-ai-journaling',
+    pinTitle: 'AI Journaling Web App',
+    category: 'AI Web App',
+    status: 'Live',
+    startDate: '2025',
+    role: 'Full Stack Developer',
+    teamSize: '1 Developer',
+    gallery: ['/projects/dekompres.png', '/projects/dekompres.png', '/projects/dekompres.png'],
+    features: [
+      'Fast journaling flow: short text, mood 1-5, context tags',
+      'LLM parses each entry into structured data (dominant emotion, triggers, risk indicators)',
+      'Dashboard with 7-day mood chart and most frequent triggers',
+      'Weekly pattern summary generated from your own entries',
+      'Journal data isolated per account via Row Level Security',
+      'Help banner routes users to professional support on clear risk indicators',
+    ],
+    challenges: [
+      'Designing a reliable LLM output schema for structured emotion data',
+      'Keeping the journaling flow under one minute to build a habit',
+      'Enforcing data isolation per user with Row Level Security',
+    ],
+    technologies: [
+      { name: 'Next.js (React)', description: 'Full-stack framework, server-side LLM calls' },
+      { name: 'TypeScript', description: 'Type-safe application code' },
+      { name: 'Tailwind CSS', description: 'Styling framework' },
+      { name: 'Supabase', description: 'Database with Row Level Security for per-account data isolation' },
+      { name: 'LLM API', description: 'Parses journal entries into structured insights, called only server-side' },
+    ],
+    detailedDescription:
+      'Dekompres is a structured journaling web app for students, built for IndonesiaNEXT Hackathon. Users write 2-3 sentences a day with a mood rating and context; an LLM reads each entry once and stores it as structured data (dominant emotion, triggers, risk indicators). A dashboard accumulates entries into a 7-day mood chart, most frequent triggers, and weekly pattern summaries that mention concrete days and numbers. Privacy-first: journal data is isolated per account via Row Level Security and the LLM API key is only called from the server. Not a chatbot, not a clinical screening tool - it routes users to professional help when risk indicators are clear.',
+    githubUrl: '',
+    liveUrl: 'https://dekompres.vercel.app/',
+  },
+  {
+    id: 3,
+    title: 'KostKita - Mobile App',
+    des: 'Android application for boarding house property management, enabling owners to efficiently manage their rental properties, tenants, and operations.',
+    img: '/projects/kostkita.png',
+    iconLists: ['/androidstudio.svg', '/kotlin.svg', '/jetpackcompose.svg', '/expressjs.svg', '/sqlite.svg'],
+    link: '/projects/kostkita-app',
+
+    slug: 'kostkita-app',
+    pinTitle: 'Mobile Application',
+    category: 'Mobile Application',
+    status: 'In Development',
+    startDate: '2024',
+    role: 'Mobile Developer',
+    teamSize: '3 Developers',
+    gallery: ['/projects/kostkita.png', '/projects/kostkita.png', '/projects/kostkita.png'],
+    features: ['Property listing management', 'Tenant management', 'Payment tracking', 'Real-time notifications', 'Property analytics'],
+    challenges: ['Implementing real-time sync', 'Optimizing mobile performance', 'Creating intuitive UX design'],
+    technologies: [
+      { name: 'Android (Java)', description: 'Native mobile development' },
+      { name: 'Firebase', description: 'Backend services' },
+      { name: 'MySQL', description: 'Database' },
+    ],
+    detailedDescription: 'A comprehensive mobile application for boarding house management, helping property owners streamline their rental operations.',
+    githubUrl: '',
+    liveUrl: null,
+  },
+  {
+    id: 4,
+    title: 'Smart Research Environment (SRE) - BRIN',
+    des: 'Internship project at BRIN: built features for the Writer module (academic writing editor with AI detection, reference manager, citations, bibliography, article history) and the Helpdesk module of the Smart Research Environment platform.',
+    img: '/projects/sre-1.png',
+    iconLists: ['/next.svg', '/re.svg', '/ts.svg', '/supabase.svg'],
+    link: '/projects/sre-brin',
+    slug: 'sre-brin',
+    pinTitle: 'SRE Writer & Helpdesk',
+    category: 'Internship Project',
+    status: 'Completed',
+    startDate: 'Jul - Sep 2025',
+    role: 'Frontend Developer Intern (Writer & Helpdesk modules)',
+    teamSize: 'Team Project',
+    gallery: ['/projects/sre-2.png', '/projects/sre-4.png', '/projects/sre-3.png'],
+    features: [
+      'AI Checker in the Writer editor using the GPTZero API, with highlighted text to distinguish human and AI-written parts',
+      'Reference manager (Referensi Pustaka) with live search to find uploaded articles',
+      'Cite button that inserts a numbered citation into the text and adds it to the bibliography',
+      'Bibliography page (Daftar Pustaka) with preview, refresh, and delete citation',
+      'Article history (Riwayat) to restore a previous article into the editor',
+      'Save Draft and Save Final with confirmation popups and content validation',
+      'Warning before leaving the page with unsaved changes, and restoring the last edited data',
+      'Helpdesk (Pusat Bantuan): FAQ categories, search, and photo/video guides for user issues',
+    ],
+    challenges: [
+      'Integrating the GPTZero AI detector and improving the accuracy of its results',
+      'Fixing bugs in the reference manager live search',
+      'Keeping citations in the editor in sync with the bibliography list',
+      'Translating all Writer feature names and labels to Indonesian for consistency',
+    ],
+    technologies: [
+      { name: 'Next.js', description: 'Framework for the SRE web platform' },
+      { name: 'React', description: 'Component-based UI for the Writer and Helpdesk pages' },
+      { name: 'TypeScript', description: 'Type-safe models, controllers, and views' },
+      { name: 'Supabase', description: 'PostgreSQL database for articles, citations, references, and history' },
+      { name: 'GPTZero API', description: 'AI text detection for the AI Checker feature' },
+    ],
+    detailedDescription: 'Smart Research Environment (SRE) is a web platform by Badan Riset dan Inovasi Nasional (BRIN) that supports the academic research process with AI. During my internship (July - September 2025) I worked as a frontend developer on two of its modules. In the Writer module, a web-based academic writing editor, I built the AI Checker using the GPTZero API with highlighted human vs AI text, a reference manager with live search, citation insertion, a bibliography page with preview and delete, article history to restore previous versions, and save draft/final flows with confirmation popups, content validation, and an unsaved-changes warning. In the Helpdesk module (Pusat Bantuan) I added FAQ categories, search, and photo/video guides for user issues. Other SRE modules, such as the landing page and concept map, were built by other team members.',
+    githubUrl: '',
+    liveUrl: 'https://www.riset.web.id/',
+  },
+];
+
+// Helper function untuk mendapatkan project berdasarkan slug
+export const getProjectBySlug = (slug: string): Project | undefined => {
+  return projects.find((project) => project.slug === slug);
+};
+
+// Export projects sebagai ProjectBase[] untuk kompatibilitas (jika diperlukan)
+export const projectsBase: ProjectBase[] = projects.map((project) => ({
+  id: project.id,
+  title: project.title,
+  des: project.des,
+  img: project.img,
+  iconLists: project.iconLists,
+  link: project.link,
+}));
+
+export const testimonials = [
+  {
+    quote:
+      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+    name: 'Michael Johnson',
+    title: 'Director of AlphaStream Technologies',
+  },
+  {
+    quote:
+      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+    name: 'Michael Johnson',
+    title: 'Director of AlphaStream Technologies',
+  },
+  {
+    quote:
+      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+    name: 'Michael Johnson',
+    title: 'Director of AlphaStream Technologies',
+  },
+  {
+    quote:
+      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+    name: 'Michael Johnson',
+    title: 'Director of AlphaStream Technologies',
+  },
+];
+
+export const companies = [
+  {
+    id: 1,
+    name: 'cloudinary',
+    img: '/cloud.svg',
+    nameImg: '/cloudName.svg',
+  },
+  {
+    id: 2,
+    name: 'appwrite',
+    img: '/app.svg',
+    nameImg: '/appName.svg',
+  },
+  {
+    id: 3,
+    name: 'HOSTINGER',
+    img: '/host.svg',
+    nameImg: '/hostName.svg',
+  },
+  {
+    id: 4,
+    name: 'stream',
+    img: '/s.svg',
+    nameImg: '/streamName.svg',
+  },
+  {
+    id: 5,
+    name: 'docker.',
+    img: '/dock.svg',
+    nameImg: '/dockerName.svg',
+  },
+];
+
+export const workExperience = [
+  {
+    id: 1,
+    title: 'Frontend Engineer Intern',
+    desc: 'Assisted in the development of a web-based platform using React.js, enhancing interactivity.',
+    className: 'md:col-span-2',
+    thumbnail: '/exp1.svg',
+  },
+  {
+    id: 2,
+    title: 'Mobile App Dev - JSM Tech',
+    desc: 'Designed and developed mobile app for both iOS & Android platforms using React Native.',
+    className: 'md:col-span-2',
+    thumbnail: '/exp2.svg',
+  },
+  {
+    id: 3,
+    title: 'Freelance App Dev Project',
+    desc: 'Led the dev of a mobile app for a client, from initial concept to deployment on app stores.',
+    className: 'md:col-span-2',
+    thumbnail: '/exp3.svg',
+  },
+  {
+    id: 4,
+    title: 'Lead Frontend Developer',
+    desc: 'Developed and maintained user-facing features using modern frontend technologies.',
+    className: 'md:col-span-2',
+    thumbnail: '/exp4.svg',
+  },
+];
+
+// Update di data/index.ts
+export const socialMedia = [
+  {
+    id: 1,
+    img: '/git.svg',
+    link: 'https://github.com/DaffaMusyaffa',
+  },
+  {
+    id: 3,
+    img: '/link.svg',
+    link: 'https://www.linkedin.com/in/muhammaddaffamusyaffa',
+  },
+  {
+    id: 4,
+    img: '/insta.svg', // Tambahkan Instagram jika ada
+    link: 'https://www.instagram.com/daffamsyff_',
+  },
+];
