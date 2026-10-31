@@ -36,11 +36,11 @@ export const experienceData: ExperienceItem[] = [
     slug: 'laboratory-assistant',
     title: 'Laboratory Assistant',
     company: 'University Laboratory',
-    period: 'Oct 2024 - Dec 2024',
+    period: 'Oct 2024 - Oct 2025',
     location: 'Bandung, Indonesia',
     image: '/experience/aslab.jpg',
     description:
-      'Serving as a Teaching Assistant for Programming Practicum 1 course, providing hands-on guidance to students in fundamental programming concepts. Responsible for conducting lab sessions, evaluating student assignments, and supporting the learning process through practical demonstrations and problem-solving assistance.',
+      'Serving as a Teaching Assistant for Programming Practicum 1 and Programming Practicum 2 courses, providing hands-on guidance to students in fundamental programming concepts. Responsible for conducting lab sessions, evaluating student assignments, and supporting the learning process through practical demonstrations and problem-solving assistance.',
     technologies: ['Java', 'MySQL', 'IntelliJ IDEA', 'Git'],
     link: 'https://university-lab.com',
     achievements: ['Recognition as Outstanding Lab Assistant from Faculty', 'Successfully guided 100+ students in programming fundamentals', 'Developed practical exercise materials for enhanced learning'],
