@@ -24,7 +24,6 @@ export const defaultContent = {
     stats: [
       { label: 'Projects Completed', number: '5+' },
       { label: 'Years Experience', number: '1+' },
-      { label: 'Happy Clients', number: '10+' },
       { label: 'Technologies', number: '15+' },
     ],
   },
@@ -46,23 +45,9 @@ export const defaultContent = {
   education: {
     items: [
       {
-        universityName: 'SMAN 6 Karawang',
-        degree: 'Senior High School - Sciences Major',
-        specialization: 'Science',
-        period: '2019 - 2022',
-        gpa: '85.5/100',
-        logo: '/sma-logo.png',
-        achievements: [
-          'Graduated with Honors in Science',
-          'Active participant in Student Council',
-          'Self-taught programming enthusiast during high school years',
-        ],
-        description: 'Completed senior high school education with a focus on natural sciences (IPA). Developed a strong interest in technology and self-taught programming fundamentals. This diverse educational background built strong communication skills, critical thinking, and adaptability that later proved valuable in transitioning to the computer science field.',
-      },
-      {
         universityName: 'Universitas Pasundan',
         degree: 'Bachelor of Informatics Engineering (S.T.)',
-        specialization: 'Full-Stack Development & Software Engineering',
+        specialization: 'Full-Stack Development',
         period: '2022 - 2026',
         gpa: '3.55/4.00',
         logo: '/unpas-logo.png',

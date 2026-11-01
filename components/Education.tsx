@@ -91,12 +91,16 @@ const Education = () => {
         </motion.div>
 
         {/* Mobile Navigation Buttons */}
-        <NavigationButtons scrollLeft={scrollLeft} scrollRight={scrollRight} />
+        {educationData.length > 1 && <NavigationButtons scrollLeft={scrollLeft} scrollRight={scrollRight} />}
 
         {/* Education Cards Container */}
         <div
           ref={scrollContainerRef}
-          className="flex overflow-x-auto gap-4 pb-4 lg:grid lg:grid-cols-2 lg:gap-8 lg:overflow-visible lg:pb-0"
+          className={
+            educationData.length > 1
+              ? 'flex overflow-x-auto gap-4 pb-4 lg:grid lg:grid-cols-2 lg:gap-8 lg:overflow-visible lg:pb-0'
+              : 'flex justify-center pb-4 lg:pb-0'
+          }
           style={{
             scrollbarWidth: 'none',
             msOverflowStyle: 'none',
@@ -110,7 +114,7 @@ const Education = () => {
               transition={{ duration: 0.8, delay: index * 0.2 }}
               viewport={{ once: true }}
               whileHover={{ y: -10 }}
-              className="h-full w-80 lg:w-full flex-shrink-0"
+              className={educationData.length > 1 ? 'h-full w-80 lg:w-full flex-shrink-0' : 'h-full w-full max-w-3xl'}
             >
               <Button
                 duration={Math.floor(Math.random() * 10000) + 10000}
