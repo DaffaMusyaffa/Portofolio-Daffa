@@ -62,6 +62,20 @@ export const defaultContent = {
       },
     ],
   },
+  certificates: {
+    items: [
+      {
+        title: 'Cloud Practitioner Essentials (Belajar Dasar AWS Cloud)',
+        issuer: 'Dicoding Indonesia',
+        year: '2024',
+        image: '/certificates/aws-cloud-practitioner-essentials.png',
+        file: '/certificates/aws-cloud-practitioner-essentials.pdf',
+        link: 'https://www.dicoding.com/certificates/JLX173DQ6X72',
+        description:
+          'Completed a 13-hour beginner course aligned with AWS competency standards, covering cloud computing, global infrastructure, networking, storage and databases, security, monitoring, pricing, and the AWS Well-Architected Framework. Issued 19 April 2024, valid until 19 April 2027.',
+      },
+    ],
+  },
   approach: {
     items: [
       {

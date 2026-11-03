@@ -126,7 +126,7 @@ const Education = () => {
                 }}
                 className="flex-1 text-black dark:text-white border-neutral-200 dark:border-slate-800 w-full h-full"
               >
-                <div className="p-6 lg:p-8 py-8 lg:py-10 h-full flex flex-col">
+                <div className="p-6 lg:p-8 py-8 lg:py-10 h-full flex flex-col text-left">
                   {/* University Logo and Header */}
                   <motion.div className="flex items-center gap-4 lg:gap-6 mb-6 lg:mb-8" initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.6, delay: 0.3 + index * 0.2 }} viewport={{ once: true }}>
                     <div className="relative w-20 h-20 lg:w-24 lg:h-24 rounded-xl overflow-hidden border-2 border-white/20 backdrop-blur-sm flex items-center justify-center flex-shrink-0 p-2">
@@ -143,7 +143,7 @@ const Education = () => {
                   </motion.div>
 
                   {/* Education Details */}
-                  <motion.div className="flex-1 space-y-4 lg:space-y-6" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.5 + index * 0.2 }} viewport={{ once: true }}>
+                  <motion.div className="flex-1 space-y-4 lg:space-y-6 text-center" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.5 + index * 0.2 }} viewport={{ once: true }}>
                     {/* Degree & Specialization */}
                     <div>
                       <h4 className="text-lg lg:text-xl font-semibold text-white mb-2 leading-tight">{edu.degree}</h4>
@@ -176,7 +176,7 @@ const Education = () => {
                             whileHover={{ scale: 1.02, backgroundColor: 'rgba(255,255,255,0.1)' }}
                           >
                             <div className="w-2 h-2 bg-purple rounded-full flex-shrink-0 mt-2"></div>
-                            <p className="text-white-100 text-base">{achievement}</p>
+                            <p className="text-white-100 text-base text-left">{achievement}</p>
                           </motion.div>
                         ))}
                       </div>

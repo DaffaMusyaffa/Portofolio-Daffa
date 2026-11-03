@@ -8,6 +8,7 @@ const navItems = [
   { href: '/dashboard', label: 'Kelola Projects' },
   { href: '/dashboard/experience', label: 'My Experiences' },
   { href: '/dashboard/education', label: 'My Education' },
+  { href: '/dashboard/certificates', label: 'My Certificates' },
   { href: '/dashboard/skills', label: 'My Skills' },
   { href: '/dashboard/approach', label: 'My Approach' },
   { href: '/dashboard/about', label: 'About Me' },

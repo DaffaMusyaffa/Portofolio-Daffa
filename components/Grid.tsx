@@ -3,6 +3,7 @@ import { BentoGrid, BentoGridItem } from './ui/BentoGrid';
 import Profile from './Profile'; // Import Profile component
 import Education from './Education'; // Import Education component
 import Experiences from './Experience'; // Import Experience component
+import Certificates from './Certificates';
 
 const Grid = () => {
   return (
@@ -12,6 +13,9 @@ const Grid = () => {
 
       {/* Professional Education Section */}
       <Education />
+
+      {/* Certificates Section */}
+      <Certificates />
 
       {/* Professional Experience Section */}
       <Experiences />
